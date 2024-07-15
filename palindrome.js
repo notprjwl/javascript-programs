@@ -10,5 +10,4 @@ function palindrome(word) {
     }
 }
 
-
 palindrome('radar')
