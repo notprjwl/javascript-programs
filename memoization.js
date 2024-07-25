@@ -5,6 +5,7 @@ const map = new Map();
 function memoizeOne(fn) {
     function temp(...args) {
         const key = args.join("_");
+        // console.log(key, ...args)
 
         if (map.has(key)) {
             console.log("getting data from cache")
