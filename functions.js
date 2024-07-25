@@ -96,11 +96,104 @@
 /**
  * FUNCTION HOISTING QUESTION
  */
-var x = 21;
+// var x = 21;
 
-var fun = function () {
-    var x = 31;
-    console.log(x);
-};
+// var fun = function () {
+//     var x = 31;
+//     console.log(x);
+// };
 
-fun();
+// fun();
+
+/**
+ * PARAMS VS ARGUMENTS
+ */
+
+// function add(num1, num2) {
+//   // params
+//   return num1 + num2;
+// }
+
+// console.log(add(1, 2)); // arguments
+
+/**
+ * SPREAD VS REST
+ */
+// function add(...nums) {     // when we use the spread operator (...) here it is called as rest operator
+//   return nums[0] + nums[1];
+// }
+
+// arr = [5, 5];
+
+// console.log(add(...arr));   // spread operator
+
+/**
+ * INTERVIEW QUESTION
+ */
+// const add = (num1, num2, ...numbers) => {
+//  return num1 + num2 , numbers
+// }
+
+// console.log(add(1, 2, 3, 4, 5, 6, 7))
+
+/**
+ * ARROW FUNCTION vs NORMAL FUNCTION
+ */
+
+// 1 - syntax
+// const addArr = (num1, num2) => {
+//     return num1 + num2
+// }
+
+// console.log(addArr(1, 2))
+
+// function addFun(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(addFun(1, 2));
+
+// 2 - implicit return keyword
+// const addArr = (num1, num2) => num1 + num2;
+
+// console.log(addArr(1, 2));
+
+// function addFun(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(addFun(1, 2));
+
+// 3 - arguments keyword
+// const addArr = () => {
+//     return arguments
+// }
+
+// console.log(addArr(1, 2))
+
+// function addFun() {
+//   return arguments
+// }
+
+// console.log(addFun(1, 2));
+
+// global.username = "globalprjwl"
+
+// const world = {
+//   username: "prjwl",
+//   hello1: () => {
+//     console.log("yo whad up", global.username);     // this throws undefined error because this is pointing to the global scope 
+//   },
+//   hello2() {
+//     console.log("yo whad up", this.username);     // this shows the username this keyword is pointing to the local scope
+//   },
+// };
+
+
+// world.hello1();
+// world.hello2();
+
+
+/**
+ * 
+ */
